@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Safe Social</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript for Waitlist Forms -->
+<script src="js/script.js"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo & Brand Name -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="images/logo.PNG" alt="Safe Social Logo" width="40" height="40" class="me-2">
+                Safe Social
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="container my-5 text-center">
+        <h2 class="fw-bold">Choose Your Plan</h2>
+        <p class="text-muted">Affordable options for every family.</p>
+        <div class="row justify-content-center">
+            <!-- Free Plan -->
+            <div class="col-md-4">
+                <div class="pricing-box p-4 shadow-sm rounded border" style="max-width: 350px; height: 100%; border: 3px solid #4A90E2; background-color: white;">
+                    <h3 class="fw-bold text-dark">Free Plan</h3>
+                    <p class="text-muted">Filters Social Media Through Google Chrome Browser</p>
+                    <h4 class="fw-bold">$0 / month</h4>
+                    <ul class="list-unstyled">
+                        <li>✔ Blocks pornographic and revealing images posted on social media pages</li>
+                        <li>✔ Blocks vulgar language</li>
+                        <li>✔ AI powered</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#browserWaitlistModal">Download Now Free!</button>
+                </div>
+            </div>
+            
+            <!-- Premium Plan -->
+            <div class="col-md-4">
+                <div class="pricing-box p-4 shadow-sm rounded border" style="max-width: 350px; height: 100%; border: 3px solid #357ABD; background-color: white;">
+                    <h3 class="fw-bold text-dark">Premium Plan</h3>
+                    <p class="text-muted">AI filter operates directly on social media sites like Instagram and YouTube</p>
+                    <h4 class="fw-bold">$9.99 / month</h4>
+                    <ul class="list-unstyled">
+                        <li>✔ Social Media Platform Filtering</li>
+                        <li>✔ Advanced AI protection agent</li>
+                        <li>✔ Receive alerts about threats</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up Early</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Sales Section (Restored) -->
+        <section class="container my-5 p-4 shadow-sm rounded bg-white">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="contact-sales.jpg" alt="Contact Sales" class="img-fluid rounded-circle" style="max-width: 200px;">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="fw-bold">Contact Our Team!</h3>
+                    <p class="text-muted">We would love to answer early questions, take feedback, and hear from parents and others who are battling the challanges facing young people today!</p>
+                    <a href="#" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Compare Features Section (Restored) -->
+        <section class="container my-5 p-4 shadow-sm rounded bg-white">
+            <h3 class="fw-bold text-center">Compare All Features</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Features</th>
+                            <th>Free Plan</th>
+                            <th>Premium Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Essential Content Filtering</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Safe Browsing</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Filtering</td>
+                            <td>✘</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Parental Insights & Reports</td>
+                            <td>✘</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Priority Support</td>
+                            <td>✘</td>
+                            <td>✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="contactModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/happy_family.png.png" alt="Our Team" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                        <p>We’d love to hear from you! Share your experiences or ask us any questions.</p>
+                        <p><strong>Email:</strong> safesocialhub@gmail.com </p>
+                        <p><strong>Phone:</strong> (208)-446-6615 </p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Main Waitlist Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="signupModalLabel">Join the Waitlist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Section -->
+                <div id="formContainer">
+                    <p>Be the first to get access when we launch! Only $9.99/month.</p>
+                    <form id="signupForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Join Now</button>
+                    </form>
+                </div>
+
+                <!-- Confirmation Message (Initially Hidden) -->
+                <div id="confirmationContainer" style="display: none; text-align: center;">
+                    <h5 class="fw-bold">Congrats, you are on the waitlist!</h5>
+                    <p>We will reach out to you immediately when the product is up and ready!</p>
+                    <button class="btn btn-primary w-100" id="closeModalBtn">Okay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Browser Extension Waitlist Modal -->
+<div class="modal fade" id="browserWaitlistModal" tabindex="-1" aria-labelledby="browserWaitlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="browserWaitlistModalLabel">Join the Browser Extension Waitlist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Section -->
+                <div id="browserFormContainer">
+                    <p>The browser extension will be up in a matter of days! Give us your information and we will get it to you as soon as we finish our Google approval process. Thank you for your patience!</p>
+                    <form id="browserWaitlistForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
+                        <input type="hidden" name="source" value="browserWaitlist">
+                        <div class="mb-3">
+                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Join Now</button>
+                    </form>
+                </div>
+
+                <!-- Confirmation Message (Initially Hidden) -->
+                <div id="browserConfirmationContainer" style="display: none; text-align: center;">
+                    <h5 class="fw-bold">You're on the waitlist!</h5>
+                    <p>We'll notify you as soon as the browser extension is available.</p>
+                    <button class="btn btn-primary w-100" id="closeBrowserModalBtn">Okay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        <p class="mb-0">&copy; 2025 Pure Screen. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7f9; /* Light teal */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    background-color: #e0f7f9 !important; /* Light teal background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 10px 0; /* Add some spacing */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Adds space between links */
+}
+
+.navbar .btn-primary {
+    padding: 8px 20px;
+    font-size: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Slightly bigger text */
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Adjust Navbar Logo Position */
+.navbar-brand img {
+    height: 30px; /* Adjust height for proper size */
+    width: auto;  /* Keeps the aspect ratio */
+    margin-right: 8px; /* Adds spacing between logo and text */
+}
+
+/* Optional: If the logo is too large on mobile screens, adjust size */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px;
+        margin-top: 3px; /* Adjust position for smaller screens */
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../images/hero-background.jpg') center/cover no-repeat;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.hero-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+.features .card {
+    border: none;
+    border-radius: 10px;
+    padding: 30px; /* Increased padding for a bigger box */
+    font-size: 1.2rem; /* Increase text size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.features .card h3 {
+    font-size: 1.5rem; /* Make the title bigger */
+    font-weight: bold;
+}
+
+.features .card p {
+    font-size: 1rem;
+}
+
+.features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.features {
+    padding: 60px 0;
+}
+
+/* Pricing Section */
+.pricing-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.pricing-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-box h3 {
+    font-weight: bold;
+}
+
+.pricing-box h4 {
+    color: #007bff;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.pricing-box ul {
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-box ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Waitlist Section */
+.waitlist-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.waitlist-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.waitlist-box h2 {
+    font-weight: bold;
+}
+
+.waitlist-box .form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.waitlist-box .btn-success {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+}
+
+.waitlist-box .btn-success:hover {
+    background-color: #0056b3;
+}
+
+/* Fixes the navbar covering the title */
+.products-section {
+    padding-top: 120px; /* Adjust to match navbar height */
+    min-height: 100vh; /* Ensures full-screen section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #e0f7f9 !important; /* Light teal */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Full-Width Explanatory Section */
+.full-width-text {
+    max-width: 900px; /* Controls readability, prevents text from stretching too wide */
+    margin: 40px auto; /* Centers the text block with spacing */
+    text-align: left; /* Aligns text to the left */
+}
+
+.full-width-text h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.full-width-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 992px) {
+    .full-width-text {
+        padding: 0 15px; /* Adds spacing on smaller screens */
+        text-align: left; /* Keeps left alignment */
+    }
+
+    .full-width-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .full-width-text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ensure Both Boxes are Same Size */
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+/* Ensure Both Images are the Same Size */
+.image-container {
+    width: 100%;
+    height: 250px; /* Set a fixed height for images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images scale properly while keeping proportions */
+    border-radius: 10px;
+}
+
+/* Make Both Buttons Blue */
+.btn-primary {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+}
+
+/* Enhance the Box Appearance */
+.info-box {
+    background: white;
+    border: 2px solid #333; /* Thin black border */
+    border-radius: 12px; /* Smooth rounded edges */
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Slight Hover Effect */
+.info-box:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+/* Style for Browser Waitlist Modal */
+#browserWaitlistModal .modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#browserWaitlistModal .modal-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+#browserWaitlistModal .modal-body {
+    padding: 20px;
+    text-align: center;
+}
+
+body.modal-open {
+    padding-right: 0px !important;
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}

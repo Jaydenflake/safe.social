@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pure Screen - Products</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript for Waitlist Forms -->
+<script src="js/script.js"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo & Brand Name -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="images/logo.PNG" alt="Safe Social Logo" width="40" height="40" class="me-2">
+                Safe Social
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container-fluid products-section d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h2 class="fw-bold">Our Products</h2>
+            <p class="text-muted">Explore how Pure Screen can make social media safer for your family</p>
+        </div>
+        <div class="row justify-content-center w-100">
+            <!-- Product 1 -->
+            <div class="col-md-5 d-flex">
+                <div class="card p-4 shadow-sm text-center flex-fill">
+                    <h3>🔒 Social Media Browser Protection</h3>
+                    <p>Filters all social media content like YouTube videos when accessed through a child's internet browser</p>
+                    <a href="browser.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-5 d-flex">
+                <div class="card p-4 shadow-sm text-center flex-fill">
+                    <h3>📊 Full Social Media Protection Agent</h3>
+                    <p>Filters all social media content within social media apps including Instagram, Facebook, SnapChat, YouTube</p>
+                    <a href="full.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Main Waitlist Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="signupModalLabel">Join the Waitlist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Section -->
+                <div id="formContainer">
+                    <p>Be the first to get access when we launch! Only $9.99/month.</p>
+                    <form id="signupForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Join Now</button>
+                    </form>
+                </div>
+
+                <!-- Confirmation Message (Initially Hidden) -->
+                <div id="confirmationContainer" style="display: none; text-align: center;">
+                    <h5 class="fw-bold">Congrats, you are on the waitlist!</h5>
+                    <p>We will reach out to you immediately when the product is up and ready!</p>
+                    <button class="btn btn-primary w-100" id="closeModalBtn">Okay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+            <!-- Contact Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="contactModalLabel">Contact Us</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="images/happy_family.png.png" alt="Our Team" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                            <p>We’d love to hear from you! Share your experiences or ask us any questions.</p>
+                            <p><strong>Email:</strong> safesocialhub@gmail.com </p>
+                            <p><strong>Phone:</strong> (208)-446-6615 </p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        <p class="mb-0">&copy; 2025 Pure Screen. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

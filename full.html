@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Safe Social Pro - Safe Social</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn more about Safe Social's Full Social Media Protection feature.">
+    <meta name="keywords" content="social media filter, parental control, online safety, safe browsing">
+    <meta name="author" content="Pure Screen">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom JavaScript for Waitlist Forms -->
+<script src="js/script.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+               /* Updated Navbar Styling */
+               .navbar {
+            background-color: #e0f7f9 !important; /* Light teal background */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px; /* Adds space between links */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        /* Adjust Navbar Logo Position */
+        .navbar-brand img {
+            height: 30px;
+            width: auto;
+            margin-right: 8px;
+        }
+
+
+        /* Responsive Section Layout */
+        .side-by-side-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10vh 5%;
+            background-color: #f8f9fa;
+        }
+
+        .side-by-side-section:nth-of-type(even) {
+            flex-direction: row-reverse;
+            background-color: white;
+        }
+
+        .side-by-side-text {
+            width: 50%;
+            padding: 40px;
+            font-size: 1.5rem;
+        }
+
+        .side-by-side-text h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .side-by-side-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .side-by-side-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 992px) {
+            .side-by-side-section {
+                flex-direction: column !important;
+                text-align: center;
+            }
+            .side-by-side-text, .side-by-side-image {
+                width: 100%;
+                padding: 20px;
+            }
+            .side-by-side-text h2 {
+                font-size: 2rem;
+            }
+            .side-by-side-text p {
+                font-size: 1.2rem;
+            }
+     
+        }
+
+/* Features of The Pro Section */
+.features-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 5%;
+}
+
+/* Left-aligned container */
+.features-container {
+    width: 50%; /* Take up left half of screen */
+    max-width: 700px;
+}
+
+/* Left-aligned title */
+.features-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Table Styling */
+.features-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.features-table th, .features-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.features-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .features-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 5%;
+        height: auto;
+    }
+
+    .features-container {
+        width: 100%;
+    }
+
+    .features-table th, .features-table td {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-table th, .features-table td {
+        font-size: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px;
+    }
+}
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+/* Sign-Up Section (Non-Fixed) */
+.text-section {
+    width: 100%;
+    padding: 20px 5%;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.text-section button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+    </style>
+
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo & Brand Name -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="images/logo.PNG" alt="Safe Social Logo" width="40" height="40" class="me-2">
+                Safe Social
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Section 1: The Problem -->
+<section class="side-by-side-section">
+    <div class="side-by-side-text">
+        <h2>Protect Your Kids Without the Struggle</h2>
+        <p>In today’s digital world, social media is woven into everyday life—popular platforms like Youtube, Instagram, and SnapChat connect kids with friends, entertain, and can even provide valuable educational content. But for parents, they can also presents overwhelming challenges. How do you protect your child from harmful content, online predators, and addictive scrolling habits without cutting them off from the digital world entirely?</p>
+    </div>
+    <div class="side-by-side-image">
+        <img src="images/concerned parents.png" alt="Concerned Parents">
+    </div>
+</section>
+
+<!-- Section 2: Solution Overview -->
+<section class="side-by-side-section">
+    <div class="side-by-side-text">
+        <h2>A Smarter Way to Keep Kids Safe Online</h2>
+        <p>In the past, filtering mechanisms have struggled to protect kids within social media apps, because it is hard to implement protective software on someone else's platform. Parents have had to ban and block downloading of social media apps altogether in order to make kid's devices safe.</p>
+        <p>This will soon no longer be the case! Safe Social is using cutting-edge technology to create a solution for parents so they can allow their kids to use social media platforms—with confidence that they will not be exposed to absolute trash!</p>
+    </div>
+    <div class="side-by-side-image">
+        <img src="images/happy_parent.jpg" alt="Happy Parent">
+    </div>
+</section>
+
+<!-- Section 3: How It Works -->
+<section class="side-by-side-section">
+    <div class="side-by-side-text">
+        <h2>How It Works</h2>
+        <p>Unlike traditional filters that struggle to control what happens inside social media apps, Pure Screen puts parents in charge—not the platforms. Every time a child scrolls, taps, or swipes, our advanced AI scans the content being loaded to their server before it reaches their screen.</p>
+    </div>
+    <div class="side-by-side-image">
+        <img src="images/logo.png" alt="Pure Screen Logo">
+    </div>
+</section>
+
+<!-- Section 4: Flexibility -->
+<section class="side-by-side-section">
+    <div class="side-by-side-text">
+        <h2>Parents In Control</h2>
+        <ul>
+            <li><strong>Keep Kids Safe on Social Media</strong> – No more worrying about harmful content or online predators.</li>
+            <li><strong>Total Control, No Loopholes</strong> – Set limits, block content, and monitor activity with ease.</li>
+            <li><strong>Flexible & Customizable</strong> – Adjust settings to fit your child’s needs and your parenting style</li>
+            <li><strong>No More Exhausting battles</strong> – End the struggle of screen time battles and workarounds.</li>
+        </ul>
+    </div>
+    <div class="side-by-side-image">
+        <img src="images/happy_family.png" alt="Happy Family">
+    </div>
+</section>
+
+<!-- Features of The Falcon Section (Left-Aligned) -->
+<section class="features-section">
+    <div class="features-container">
+        <h2>Features of Safe Social Pro</h2>
+        <table class="features-table">
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th>✔</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Works within Youtube, Instagram, Facebook, Snapchat apps</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>AI text and image recognition increases confidence and decreases frequency of false flags</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Customizable parental controls</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Parantel Notifacations of potential cyber-bullying, Online Predators, signs of engagement with harmful and addictive content</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>AI reinforced learning improves the model continually to create higher confidence levels</td>
+                    <td>✔</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Main Waitlist Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="signupModalLabel">Join the Waitlist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Section -->
+                <div id="formContainer">
+                    <p>Be the first to get access when we launch! Only $9.99/month.</p>
+                    <form id="signupForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
+                        <div class="mb-3">
+                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Join Now</button>
+                    </form>
+                </div>
+
+                <!-- Confirmation Message (Initially Hidden) -->
+                <div id="confirmationContainer" style="display: none; text-align: center;">
+                    <h5 class="fw-bold">Congrats, you are on the waitlist!</h5>
+                    <p>We will reach out to you immediately when the product is up and ready!</p>
+                    <button class="btn btn-primary w-100" id="closeModalBtn">Okay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Contact Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="contactModalLabel">Contact Us</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="images/happy_family.png.png" alt="Our Team" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                            <p>We’d love to hear from you! Share your experiences or ask us any questions.</p>
+                            <p><strong>Email:</strong> safesocialhub@gmail.com </p>
+                            <p><strong>Phone:</strong> (208)-446-6615 </p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Updated Sign-Up Section with Modal Trigger -->
+<section class="text-section text-center" style="background-color: #007bff; color: white;">
+    <h2>Sign Up Early!</h2>
+    <p>Help your kids connect safely online like never before!</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Safe Social. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
