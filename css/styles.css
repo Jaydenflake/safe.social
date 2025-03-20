@@ -65,6 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 65px;
     padding: 50px 20px;
     position: relative;
 }
@@ -114,7 +115,10 @@ body {
     padding: 60px 0;
 }
 
-/* Pricing Section */
+.pricing-section {
+    margin-top: 100px !important; /* Forces the margin */
+}
+
 .pricing-box {
     background: white;
     border-radius: 10px;
@@ -252,18 +256,20 @@ body {
 /* Ensure Both Images are the Same Size */
 .image-container {
     width: 100%;
-    height: 250px; /* Set a fixed height for images */
+    height: auto; /* Let images determine the height dynamically */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 15px; /* Optional: Adds space around the image */
 }
 
+/* Ensure images scale properly without cropping */
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures images scale properly while keeping proportions */
-    border-radius: 10px;
+    width: 100%; /* Makes sure images scale within container */
+    height: auto; /* Ensures proportional resizing */
+    object-fit: contain; /* Prevents cropping */
+    border-radius: 10px; /* Keeps rounded edges */
 }
 
 /* Make Both Buttons Blue */
@@ -323,4 +329,55 @@ body.modal-open {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1040;
+}
+
+/* Full-Screen Product Sections */
+.product-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 0; /* Removes extra spacing */
+}
+
+/* Make images take up a full section height */
+.full-screen-image {
+    width: 100%;
+    height: 60vh; /* Reduce height to make images smaller */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.full-screen-image img {
+    width: auto;
+    height: 90%; /* Scale image proportionally */
+    object-fit: contain; /* Ensures full image is visible */
+}
+
+/* Center the text and buttons */
+.product-content {
+    max-width: 800px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Adjust Button Size */
+.btn-primary {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .full-screen-image {
+        height: 60vh; /* Reduce image size slightly on smaller screens */
+    }
+    .product-content {
+        padding: 20px;
+    }
 }

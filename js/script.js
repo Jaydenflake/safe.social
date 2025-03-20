@@ -129,3 +129,9 @@ document.getElementById("closeBrowserModalBtn").addEventListener("click", functi
         document.getElementById("browserFormContainer").style.display = "block";
     }, 500);
 });
+
+// Browser pop-up message on page load
+document.addEventListener("DOMContentLoaded", function () {
+    let browserPopup = new bootstrap.Modal(document.getElementById("browserPopupModal"));
+    browserPopup.show();
+});

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pure Screen - Products</title>
-    
+    <title>Safe Social - Products</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,65 +13,61 @@
 
     <!-- Bootstrap JavaScript Bundle -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JavaScript for Waitlist Forms -->
-<script src="js/script.js"></script>
 
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <!-- Logo & Brand Name -->
             <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                <img src="images/logo.PNG" alt="Safe Social Logo" width="40" height="40" class="me-2">
+                <img src="images/safesocial-logo-nobg.png" alt="Safe Social Logo" width="40" height="40" class="me-2">
                 Safe Social
             </a>
-
-            <!-- Mobile Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                    <li class="nav-item"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up!</button></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <section class="container-fluid products-section d-flex align-items-center justify-content-center">
-        <div class="text-center">
-            <h2 class="fw-bold">Our Products</h2>
-            <p class="text-muted">Explore how Pure Screen can make social media safer for your family</p>
+    <!-- Social Media Browser Protection -->
+    <section class="product-section">
+        <div class="container-fluid p-0">
+            <div class="full-screen-image">
+                <img src="images/chrome-nobg-v.png" alt="Chrome Browser with Social Media">
+            </div>
         </div>
-        <div class="row justify-content-center w-100">
-            <!-- Product 1 -->
-            <div class="col-md-5 d-flex">
-                <div class="card p-4 shadow-sm text-center flex-fill">
-                    <h3>🔒 Social Media Browser Protection</h3>
-                    <p>Filters all social media content like YouTube videos when accessed through a child's internet browser</p>
-                    <a href="browser.html" class="btn btn-primary">Learn More</a>
-                </div>
+        <div class="container text-center product-content">
+            <h2 class="fw-bold">Safe Social Browser Extension</h2>
+            <p>Filters Social Media Content on the Chrome Browser</p>
+            <p>While the browser extension presently has some limitation. Its primary purpose is to allow you to see how well our Advanced AI technology can filted digital content. </p>
+            <p>The extension will filter pornographic and explicit material on Instagram and Facebook through the user's chrome browser</p>
+            <a href="browser.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Full Social Media Protection Agent -->
+    <section class="product-section">
+        <div class="container-fluid p-0">
+            <div class="full-screen-image">
+                <img src="images/full-version.png" alt="Phone with Instagram Blocked">
             </div>
-            <!-- Product 2 -->
-            <div class="col-md-5 d-flex">
-                <div class="card p-4 shadow-sm text-center flex-fill">
-                    <h3>📊 Full Social Media Protection Agent</h3>
-                    <p>Filters all social media content within social media apps including Instagram, Facebook, SnapChat, YouTube</p>
-                    <a href="full.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
+        </div>
+        <div class="container text-center product-content">
+            <h2 class="fw-bold">Safe Social Pro</h2>
+            <p>Filters all social media content within social media apps including Instagram, Facebook, SnapChat, YouTube.</p>
+            <p>Leverage the latest advances in AI technology to protect your family online!</p>
+            <a href="full.html" class="btn btn-primary">Learn More</a>
         </div>
     </section>
 
@@ -117,7 +113,7 @@
 
 
     
-            <!-- Contact Modal -->
+    <!-- Contact Modal -->
             <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -126,7 +122,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body text-center">
-                            <img src="images/happy_family.png.png" alt="Our Team" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                            <img src="images/ContactUs.jpeg" alt="Our Team" class="img-fluid rounded mb-3" style="max-width: 200px;">
                             <p>We’d love to hear from you! Share your experiences or ask us any questions.</p>
                             <p><strong>Email:</strong> safesocialhub@gmail.com </p>
                             <p><strong>Phone:</strong> (208)-446-6615 </p>
