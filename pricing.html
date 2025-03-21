@@ -43,7 +43,7 @@
                         <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up!</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Get Started!</button>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
                         <li>✔ Blocks vulgar language</li>
                         <li>✔ AI powered</li>
                     </ul>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#browserWaitlistModal">Download Now Free!</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#browserExtensionModal">Download Now Free!</button>
                 </div>
             </div>
             
@@ -82,7 +82,7 @@
                         <li>✔ Receive alerts about threats</li>
                         <li>✔ Increased parenting flexibility</li>
                     </ul>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up Early!</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Buy Now!</button>
                 </div>
             </div>
         </div>
@@ -169,13 +169,13 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="signupModalLabel">Join the Waitlist</h5>
+                <h5 class="modal-title fw-bold" id="signupModalLabel">Sign Up</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <!-- Form Section -->
                 <div id="formContainer">
-                    <p>Be the first to get access when we launch! Only $9.99/month.</p>
+                    <p>Let's start protecting your kids directly on social media platforms! Only $9.99/month</p>
                     <form id="signupForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
                         <div class="mb-3">
                             <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
@@ -195,8 +195,8 @@
 
                 <!-- Confirmation Message (Initially Hidden) -->
                 <div id="confirmationContainer" style="display: none; text-align: center;">
-                    <h5 class="fw-bold">Congrats, you are on the waitlist!</h5>
-                    <p>We will reach out to you immediately when the product is up and ready!</p>
+                    <h5 class="fw-bold">You are now on our waitlist!</h5>
+                    <p>Safe Social Pro is under construction. We will reach out to you immediately when the product is up and ready!</p>
                     <button class="btn btn-primary w-100" id="closeModalBtn">Okay!</button>
                 </div>
             </div>
@@ -204,42 +204,19 @@
     </div>
 </div>
 
-<!-- Browser Extension Waitlist Modal -->
-<div class="modal fade" id="browserWaitlistModal" tabindex="-1" aria-labelledby="browserWaitlistModalLabel" aria-hidden="true">
+<!-- Browser Extension Info Modal -->
+<div class="modal fade" id="browserExtensionModal" tabindex="-1" aria-labelledby="browserExtensionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="browserWaitlistModalLabel">Join the Browser Extension Waitlist</h5>
+                <h5 class="modal-title fw-bold" id="browserExtensionModalLabel">Try the Safe Social Browser Extension!</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!-- Form Section -->
-                <div id="browserFormContainer">
-                    <p>The browser extension will be up in a matter of days! Give us your information and we will get it to you as soon as we finish our Google approval process. Thank you for your patience!</p>
-                    <form id="browserWaitlistForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
-                        <input type="hidden" name="source" value="browserWaitlist">
-                        <div class="mb-3">
-                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Join Now</button>
-                    </form>
-                </div>
-
-                <!-- Confirmation Message (Initially Hidden) -->
-                <div id="browserConfirmationContainer" style="display: none; text-align: center;">
-                    <h5 class="fw-bold">You're on the waitlist!</h5>
-                    <p>We'll notify you as soon as the browser extension is available.</p>
-                    <button class="btn btn-primary w-100" id="closeBrowserModalBtn">Okay!</button>
-                </div>
+            <div class="modal-body text-center">
+                <p>This is the early release version of Safe Social's browser extension! Right now, it filters out explicit images and inappropriate language on Instagram and Facebook <strong>only when accessed through the Chrome browser</strong>.</p>
+                <p>This release is designed to show you how our AI-powered filtering works in real time. Try it out and see how Safe Social keeps unwanted content from ever reaching your child's screen!</p>
+                <a href="https://chromewebstore.google.com/detail/safe-social/jdacdndepggbdjbknoncakkgbbhfoccm?utm_source=item-share-cb&pli=1" 
+                   class="btn btn-primary w-100 mt-3" target="_blank">Go to Chrome →</a>
             </div>
         </div>
     </div>
@@ -247,7 +224,7 @@
 
     <!-- Footer -->
     <footer class="footer bg-light text-center py-3">
-        <p class="mb-0">&copy; 2025 Pure Screen. All Rights Reserved.</p>
+        <p class="mb-0">&copy; 2025 Safe Social. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

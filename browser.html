@@ -51,8 +51,8 @@
                         <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
-                    </li>
+                        <a class="btn btn-primary nav-btn" href="pricing.html">Get Started!</a>
+                </li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
     <!-- Featured Image -->
     <section class="container my-5">
         <div class="text-center">
-            <img src="images/parents_and_kid_computer.webp" class="img-fluid rounded shadow-lg" alt="Safe Browsing for Kids">
+            <img src="images/Browserimage.jpeg" class="img-fluid rounded shadow-lg" alt="Safe Browsing for Kids">
         </div>
     </section>
 
@@ -75,9 +75,7 @@
     <section class="container my-5">
         <h2 class="fw-bold">Why Does Your Child Need Social Media Protection?</h2>
         <p>
-            In today’s digital world, children and teens are constantly exposed to social media content—some of which may be harmful, inappropriate, and offensive.
-            While platforms like YouTube, Instagram, and TikTok provide entertainment and learning opportunities, they also harbor risks such as explicit videos, cyberbullying, and unsafe interactions.
-            <strong>Safe Social's Social Media Browser Protection</strong> is designed to give parents peace of mind by automatically filtering harmful content before it reaches their child’s screen.
+            While platforms like YouTube, Instagram, and TikTok offer entertainment and educational opportunities, they also pose risks such as explicit videos, cyberbullying, and unsafe interactions. Safe Social's social media browser extension is designed to give parents peace of mind by automatically filtering harmful content before it reaches their child's screen.
         </p>
     </section>
 
@@ -85,8 +83,7 @@
     <section class="container my-5">
         <h2 class="fw-bold">How It Works</h2>
         <p>
-            Safe Social uses cutting-edge **AI technology** to analyze and block explicit images and harmful text content in **real-time**.
-            Whether your child is watching YouTube, or scrolling through Instagram, the Safe Social browser extension ensures they only access safe content.
+            Safe Social uses cutting-edge AI technology to analyze and block explicit images and harmful text in real-time, ensuring your child only accesses safe content on platforms like YouTube and Instagram. The system operates seamlessly in the background, requiring no manual input once installed. You can also customize filtering settings to suit different age groups, adapting restrictions as your child grows.
         </p>
         <p>
             The system operates **seamlessly in the background**, requiring **no manual input** from parents once it's installed. You can customize filtering settings to suit different age groups, ensuring that content restrictions grow with your child.
@@ -97,7 +94,7 @@
     <section class="container my-5">
         <h2 class="fw-bold">Key Features</h2>
         <p><strong>✔ AI-Based Filtering:</strong> Instantly detects and blocks harmful content, including nudity, violence, and explicit language.</p>
-        <p><strong>✔ Safe YouTube Experience:</strong> Blocks inappropriate videos while allowing educational and age-appropriate content.</p>
+        <p><strong>✔ Safe Browsing Experience:</strong> Blocks inappropriate videos while allowing educational and age-appropriate content.</p>
         <p><strong>✔ Social Media Filtering:</strong> Restricts explicit images and dangerous trends across platforms like TikTok, Instagram, and Facebook.</p>
     </section>
 
@@ -115,7 +112,7 @@
     <section class="text-center py-5 bg-light">
         <h2 class="fw-bold">Get Started Today</h2>
         <p class="text-muted">Start protecting your child’s online experience in just a few clicks.</p>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#browserWaitlistModal">Download Now Free!</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#browserExtensionModal">Download Now Free!</button>
     </section>
 
 <!-- Main Waitlist Modal -->
@@ -158,42 +155,19 @@
     </div>
 </div>
 
-<!-- Browser Extension Waitlist Modal -->
-<div class="modal fade" id="browserWaitlistModal" tabindex="-1" aria-labelledby="browserWaitlistModalLabel" aria-hidden="true">
+<!-- Browser Extension Info Modal -->
+<div class="modal fade" id="browserExtensionModal" tabindex="-1" aria-labelledby="browserExtensionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="browserWaitlistModalLabel">Join the Browser Extension Waitlist</h5>
+                <h5 class="modal-title fw-bold" id="browserExtensionModalLabel">Try the Safe Social Browser Extension!</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!-- Form Section -->
-                <div id="browserFormContainer">
-                    <p>The browser extension will be up in a matter of days! Give us your information and we will get it to you as soon as we finish our Google approval process. Thank you for your patience!</p>
-                    <form id="browserWaitlistForm" action="https://script.google.com/macros/s/AKfycbwaqoj21y9u6BzClfnN6WHCRnJ2S7sEGTCFHV8KvB9-d57NNoiCd4SDGRIUO8msrZvyMA/exec" method="POST">
-                        <input type="hidden" name="source" value="browserWaitlist">
-                        <div class="mb-3">
-                            <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number (Optional)">
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Join Now</button>
-                    </form>
-                </div>
-
-                <!-- Confirmation Message (Initially Hidden) -->
-                <div id="browserConfirmationContainer" style="display: none; text-align: center;">
-                    <h5 class="fw-bold">You're on the waitlist!</h5>
-                    <p>We'll notify you as soon as the browser extension is available.</p>
-                    <button class="btn btn-primary w-100" id="closeBrowserModalBtn">Okay!</button>
-                </div>
+            <div class="modal-body text-center">
+                <p>This is the early release version of Safe Social's browser extension! Right now, it filters out explicit images and inappropriate language on Instagram and Facebook <strong>only when accessed through the Chrome browser</strong>.</p>
+                <p>This release is designed to show you how our AI-powered filtering works in real time. Try it out and see how Safe Social keeps unwanted content from ever reaching your child's screen!</p>
+                <a href="https://chromewebstore.google.com/detail/safe-social/jdacdndepggbdjbknoncakkgbbhfoccm?utm_source=item-share-cb&pli=1" 
+                   class="btn btn-primary w-100 mt-3" target="_blank">Go to Chrome →</a>
             </div>
         </div>
     </div>
@@ -224,9 +198,10 @@
         <div class="modal-content text-center p-3">
             <div class="modal-body">
                 
-                <h5 class="modal-title fw-bold" id="browserPopupModalLabel">Dear Parents,</h5>
-                <p>while we are working on the full-scale app, we have created this browser extension that will filter social media content through your child's Chrome browser. It currently works for Instagram and Facebook</p>
-                <p>The goal of the extension is to let you experience the precision and robustness of our AI model while we work on getting our full product up</p>
+                <h5 class="modal-title fw-bold" id="browserPopupModalLabel">Dear Parents,
+                </h5>
+                <p>While we're developing our full-scale app, we've created this browser extension to filter social media content through your child's Chrome browser. It currently works for Instagram and Facebook.</p>
+                <p>The goal of this extension is to give you a preview of the precision and effectiveness of our AI model as we continue working toward launching our complete product.</p>
                 <p><strong>Enjoy!</strong><br>Sincerely,</p>
                 <p>Your Friends at Safe Social</p>
                 <img src="images/slogan-nobg.png" alt="Browser Extension Preview" class="img-fluid mb-3" style="max-width: 80%;">
